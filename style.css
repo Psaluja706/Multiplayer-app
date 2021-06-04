@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Grandstander', cursive;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    font-weight: 200;
+    background: black;
+}
+.bg{
+  
+  background-image: url("");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img{
+    max-width: 100%;
+}
+.player{
+    width: 400px;
+    height: 630px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 1),-3px -3px 50px rgba(255, 255, 255, 0.8) ;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top-icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.top-icons a{
+color: white;
+font-size: 1.3em;
+}
+.top-icons a:hover{
+    color: pink;
+    transition: all 0.2s ease-in-out;
+}
+.img{
+    border-top: 3px solid white;
+    border-radius: 50%;
+}
+.img img{
+    margin: 50px 0 0 55px;
+    width: 70%;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.img img:hover{
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 1),-3px -3px 50px rgba(255, 255, 255, 0.8) ;
+
+}
+.text{
+    text-align: center;
+    margin: 10px ;
+}
+.text h1{
+    font-size: 3em;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+.time a{
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.seek{
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 5px 0;
+    position: relative;
+}
+.seek.fill{
+    width: 0%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.7);
+}
+.seek .handle{
+        width: 8px;
+        height: 8px;
+        background-color:royalblue;
+        border-radius: 50%;
+        margin-left: -5px;
+        transform: scale(2);
+    
+}
+
+.btns{
+    margin: 40px 0;
+    text-align: center;
+}
+.btns a{
+    color: white;
+    font-size: 1.8em;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+.btns a:hover{
+    color: gray;
+}
+.btns a:nth-child(1), .btns a:nth-child(5){
+    opacity: 0.6;
+}
+.btns a:nth-child(1), .btns a:nth-child(5){
+    opacity: 0.6;
+}
+.btns a:nth-child(1):hover, .btns a:nth-child(5):hover{
+    opacity: 1;
+    color: white;
+}
+.btns .fa-pause{
+    border: 2px solid white;
+    padding: 22px 22px;
+    padding-bottom: 16px;
+    border-radius: 50%;
+}
+.btns .fa-play{
+    border: 2px solid white;
+    padding: 22px 22px;
+    padding-bottom: 16px;
+    border-radius: 50%;
+}
+button{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background: pink;
+}
